@@ -16,7 +16,8 @@ def main():
         try:
             custom_print(sys.stdin, mark_line_number, mark_non_blank_lines)
         except KeyboardInterrupt:
-            pass
+            print('')
+            sys.exit(0)
         return
     
     for path in args.filenames:

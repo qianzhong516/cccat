@@ -2,7 +2,7 @@
 
 A copy of the command line tool cat allows reading file content into the terminal.
 
-# Usage
+## Usage
 
 ```bash
 cccat test.txt
@@ -15,6 +15,6 @@ sed G test.txt | cccat -n | head -n4
 sed G test.txt | cccat -b | head -n5
 ```
 
-# Inspired by
+## Inspired by
 
 [Build Your Own cat Tool](https://codingchallenges.fyi/challenges/challenge-cat/)
