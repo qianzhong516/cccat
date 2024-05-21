@@ -38,3 +38,8 @@ However, the original cat tool does not follow the same principle.
 ```bash
 cat test.txt -n # cat: -n: No such file or directory
 ```
+
+## Learnings From this challenge
+- Checking file existence before opening it v.s. Opening the file directly and catch the file non-existence error: Race conditions could ensue from the former method, where the file could have been deleted or moved before it's opened. The latter method helps avoid this problem and provides more graceful error handling.
+- argparse v.s. click: click seems to be more robust by offering error correction in case user's terminal is misconfigured.
+- Initiate each python project in virtual environments to avoid conflicting dependencies among different projects.
